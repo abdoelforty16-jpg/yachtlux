@@ -1,0 +1,183 @@
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+
+  .hero h1{
+    font-size: 55px;
+  }
+
+  .section-header h2{
+    font-size: 40px;
+  }
+
+  .featured-slide{
+    height: 500px;
+  }
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-links {
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-social {
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero{
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .hero h1{
+    font-size: 38px;
+  }
+
+  .hero-desc{
+    font-size: 14px;
+  }
+
+  .hero-btn{
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+  .hero video {
+    object-fit: cover;
+  }
+
+  /* NAVBAR */
+  .navbar-custom{
+    padding: 15px 20px;
+  }
+
+  .logo{
+    font-size: 22px;
+  }
+
+  /* FEATURED */
+  .featured-slide{
+    height: 350px;
+  }
+
+  .yacht-card{
+    height: 280px;
+  }
+
+  .slide-text h3{
+    font-size: 24px;
+  }
+
+  /* SECTION TITLE */
+  .section-header h2{
+    font-size: 30px;
+  }
+
+  .section-header p{
+    font-size: 13px;
+  }
+   .footer-section .row > div {
+    margin-bottom: 30px;
+  }
+
+  .footer-section h2,
+  .footer-section h4,
+  .footer-section p,
+  .footer-section li,
+  .footer-section a {
+    text-align: center;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+  
+  .fleet-tabs{
+    gap:20px;
+  }
+
+  .fleet-tab{
+    font-size:15px;
+  }
+  
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+  .hero h1{
+    font-size: 30px;
+  }
+
+  .featured-slide{
+    height: 280px;
+  }
+
+  .slide-text h3{
+    font-size: 20px;
+  }
+
+}
+
+/* =========================
+   MOBILE (≤ 600px)
+========================= */
+@media (max-width: 600px) {
+
+  /* NAVBAR */
+  .navbar-custom{
+    padding: 15px 18px;
+  }
+
+  .logo{
+    font-size: 18px;
+  }
+
+  /* HERO */
+  .hero-content{
+    padding: 110px 20px 0 20px;
+    text-align: left;
+  }
+
+  .hero-content h1{
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-desc{
+    font-size: 14px;
+  }
+
+  .hero-btn{
+    padding: 12px 25px;
+  }
+
+  /* SECTIONS TITLE */
+  .section-header h2{
+    font-size: 28px;
+  }
+}
+

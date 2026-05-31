@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YachtLux | Luxury Yachts</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- SWIPER CSS (ONLY ONCE) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+
+<body>
+
+<div class="ocean-bg"></div>
+<div class="wave wave1"></div>
+<div class="wave wave2"></div>
+
+<!-- =========================
+       NAVBAR
+========================= -->
+<header class="navbar-custom container-fluid">
+
+  <div class="logo">
+    <i class="fa-solid fa-sailboat"></i>
+    YACHT<span class="gold">LUX</span>
+  </div>
+
+  <div class="nav-actions">
+
+    <!-- SEARCH -->
+    <div class="icon-btn" id="searchBtn">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+   <!-- ADMIN BUTTON -->
+  <a href="admin.html">
+  <div class="icon-btn" id="userBtn">
+    <i class="fa-solid fa-user-shield"></i>
+  </div>
+  </a>
+
+    <!-- MENU -->
+    <div class="icon-btn menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<!-- =========================
+       SIDE MENU
+========================= -->
+
+<div class="side-menu" id="sideMenu">
+
+  <div class="close-btn" id="closeBtn">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+
+  <nav>
+
+    <div class="search-box">
+
+      <input type="text" id="searchInput" placeholder="Search Luxury Yacht...">
+
+      <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+    </div>
+
+    <a href="#hero">Home</a>
+    <a href="#fleet">Fleet</a>
+    <a href="#about">About</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#testimonials">TESTIMONIALS</a>
+    <a href="#footer">Contact</a>
+    
+
+  </nav>
+
+</div>
+
+<!-- =========================
+       HERO
+========================= -->
+
+<section class="hero" id="hero">
+
+  <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop playsinline webkit-playsinline class="hero-video">
+    <source src="assets/video/yacht5.mp4" type="video/mp4">
+  </video>
+
+  <!-- DARK OVERLAY -->
+  <div class="hero-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+
+    <p class="small-text">LUXURY YACHT EXPERIENCE</p>
+
+    <h1>Beyond The Ocean</h1>
+
+    <p class="hero-desc">
+      Experience world-class yachts, private ocean journeys, and unmatched luxury adventures across the sea.
+    </p>
+
+    <a href="#fleet" class="hero-btn">Explore Fleet</a>
+
+  </div>
+
+  <!-- LIGHT SWEEP -->
+  <div class="light-sweep"></div>
+
+  
+
+</section>
+
+<!-- =========================
+        FEATURED SLIDER
+========================= -->
+<section class="container py-5" id="featured">
+
+  <div class="section-header text-center mb-4">
+    <p>EXCLUSIVE SELECTION</p>
+    <h2>Featured Yachts</h2>
+  </div>
+
+  <div class="featured-slider">
+
+    <div class="featured-slide active">
+      <img src="assets/images/s1.jpg">
+      <div class="slide-text">
+        <h3>Predator 90</h3>
+      </div>
+    </div>
+
+    <div class="featured-slide">
+      <img src="assets/images/l1.jpg">
+      <div class="slide-text">
+        <h3>Majesty 120</h3>
+      </div>
+    </div>
+
+    <div class="featured-slide">
+      <img src="assets/images/f1.jpg">
+      <div class="slide-text">
+        <h3>Family Cruiser</h3>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- =========================
+        FLEET FILTER
+========================= -->
+
+<div class="container text-center my-5">
+
+  <!-- TITLE -->
+  <div class="fleet-intro text-center">
+
+    <p class="small-text">OUR COLLECTION</p>
+
+    <h2>Explore Luxury Yacht Fleet</h2>
+
+    <p class="fleet-desc">
+      Choose from a curated selection of sport, luxury, and family yachts designed
+      for unforgettable ocean experiences. Each yacht offers premium comfort,
+      performance, and world-class design.
+    </p>
+
+  </div>
+
+  <!-- LUXURY TABS -->
+  <div class="fleet-tabs">
+
+    <span class="fleet-tab active" data-filter="all">
+      All Yachts
+    </span>
+
+    <span class="fleet-tab" data-filter="sport">
+      Sport
+    </span>
+
+    <span class="fleet-tab" data-filter="luxury">
+      Luxury
+    </span>
+
+    <span class="fleet-tab" data-filter="family">
+      Family
+    </span>
+
+  </div>
+
+</div>
+
+<!-- =========================
+       FLEET (BOOTSTRAP GRID)
+========================= -->
+
+<section id="fleet">
+
+  <!-- ================= SPORT YACHTS ================= -->
+  <section class="container py-5" id="sport">
+
+  <div class="section-header text-center mb-5">
+    <p>HIGH PERFORMANCE COLLECTION</p>
+    <h2>Sport Yachts</h2>
+  </div>
+
+  <div class="swiper mySwiperSport">
+
+    <div class="swiper-wrapper">
+
+      <!-- CARD 1 -->
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/s1.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>OCEAN LUX</h3>
+              <h4>$2,500 / day</h4>
+              <p>Luxury yacht experience with premium suites.</p>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/s2.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>ROYAL WAVE</h3>
+              <h4>$3,200 / day</h4>
+              <p>Ultimate comfort with VIP services.</p>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/s3.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>SEA LEGEND</h3>
+              <h4>$4,000 / day</h4>
+              <p>Ultra luxury floating palace.</p>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- DOTS -->
+    <div class="swiper-pagination sport-pagination"></div>
+  </div>
+</section>
+
+  <!-- ================= LUXURY YACHTS ================= -->
+ <section class="container py-5" id="luxury">
+
+  <div class="section-header text-center mb-5">
+    <p>PREMIUM COLLECTION</p>
+    <h2>Luxury Yachts</h2>
+  </div>
+
+  <div class="swiper mySwiperLuxury">
+
+    <div class="swiper-wrapper">
+
+      <!-- CARD 1 -->
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/l1.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <span>120 FT</span>
+              <h3>Majesty 120</h3>
+              <p>Ultra luxury ocean yacht.</p>
+              <h4>$12.5M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/l2.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>Royal Horizon</h3>
+              <p>Premium comfort yacht.</p>
+              <h4>$10.8M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/l3.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>Ocean Palace</h3>
+              <p>Luxury interior yacht.</p>
+              <h4>$11.2M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/l5.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>Imperial 130</h3>
+              <p>Ultra luxury superyacht.</p>
+              <h4>$15.7M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DOTS -->
+    <div class="swiper-pagination luxury-pagination"></div>
+
+  </div>
+
+</section>
+
+  <!-- ================= FAMILY YACHTS ================= -->
+  <section class="container py-5" id="family">
+
+  <div class="section-header text-center mb-5">
+    <p>COMFORT & RELAXATION</p>
+    <h2>Family Yachts</h2>
+  </div>
+
+  <div class="swiper mySwiperFamily">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/f1.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>Family Cruiser</h3>
+              <p>Perfect for family trips.</p>
+              <h4>$4.3M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/f2.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>Ocean Family</h3>
+              <p>Luxury family yacht.</p>
+              <h4>$5.1M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/f3.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>Sea Comfort</h3>
+              <p>Relaxing family experience.</p>
+              <h4>$4.7M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="yacht-card">
+          <img src="assets/images/f4.jpg">
+          <div class="yacht-overlay">
+            <div class="yacht-content">
+              <h3>Golden Family</h3>
+              <p>Luxury family voyages.</p>
+              <h4>$6.5M</h4>
+              <a href="#about" class="yacht-btn">
+                Explore Yacht
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- DOTS -->
+    <div class="swiper-pagination family-pagination"></div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     STATS SECTION
+========================= -->
+
+<section class="stats-section">
+
+  <div class="container">
+
+    <div class="section-header text-center mb-5">
+      <p class="small-text">OUR ACHIEVEMENTS</p>
+      <h2>Luxury in Numbers</h2>
+    </div>
+
+    <div class="stats-grid">
+
+      <!-- ITEM -->
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fa-solid fa-ship"></i>
+        </div>
+        <div class="stat-info">
+          <h2 class="counter" data-target="120" data-suffix="+">0</h2>
+          <p>Luxury Yachts</p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fa-solid fa-earth-americas"></i>
+        </div>
+        <div class="stat-info">
+          <h2 class="counter" data-target="35" data-suffix="+">0</h2>
+          <p>Global Destinations</p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="stat-info">
+          <h2 class="counter" data-target="15" data-suffix="K+">0</h2>
+          <p>Premium Clients</p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <div class="stat-info">
+          <h2 class="counter" data-target="10" data-suffix="Y+">0</h2>
+          <p>Years Experience</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+    ABOUT SECTION
+========================= -->
+<section class="about-parallax" id="about">
+
+  <!-- VIDEO -->
+  <div class="about-bg">
+    <video autoplay muted loop playsinline>
+      <source src="assets/video/yacht6.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="about-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="container about-content">
+
+    <div class="row align-items-center">
+
+      <!-- TEXT -->
+      <div class="col-lg-6">
+
+        <div class="about-text">
+
+          <p class="small-text" id="aboutSmall">
+            DISCOVER YACHTLUX
+          </p>
+
+          <h2 id="aboutTitle">
+            Luxury Beyond The Ocean
+          </h2>
+
+          <p id="aboutDesc">
+            Experience premium yacht journeys with cinematic ocean views.
+          </p>
+
+          <div class="about-features">
+
+  <div class="feature-item">
+    <i class="fa-solid fa-anchor"></i>
+    <span id="feature1">Premium Yachts</span>
+  </div>
+
+  <div class="feature-item">
+    <i class="fa-solid fa-water"></i>
+    <span id="feature2">Ocean Experience</span>
+  </div>
+
+  <div class="feature-item">
+    <i class="fa-solid fa-star"></i>
+    <span id="feature3">VIP Service</span>
+  </div>
+
+</div>
+
+        </div>
+
+      </div>
+
+      <!-- SLIDER -->
+      <div class="col-lg-6">
+
+        <div class="about-slider">
+
+          <img src="assets/images/s3.jpg" class="slide active">
+          <img src="assets/images/l2.jpg" class="slide">
+          <img src="assets/images/l3.jpg" class="slide">
+          <img src="assets/images/f2.jpg" class="slide">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+       DESTINATIONS SECTION
+========================= -->
+
+<section class="destinations-section container py-5" id="destinations">
+
+  <div class="section-header text-center mb-5">
+    <p>EXPLORE WORLDWIDE</p>
+    <h2>Top Destinations</h2>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- CARD 1 -->
+    <div class="col-lg-4 col-md-6">
+
+      <div class="destination-card card-3d">
+
+        <img src="assets/images/e1.jpg">
+
+        <div class="destination-overlay">
+
+          <div class="destination-content">
+
+            <h3>Maldives</h3>
+
+            <p>
+              Crystal-clear waters, private islands,
+              and unforgettable luxury yacht adventures.
+            </p>
+
+            <!-- STARS -->
+            <div class="destination-stars">
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <!-- INFO -->
+            <div class="destination-info">
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                7 Days
+              </span>
+
+              <span class="trip-price">
+                From $4,500
+              </span>
+
+            </div>
+
+            <!-- BUTTON -->
+            <a href="#" class="destination-btn">
+              Explore Destination
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-lg-4 col-md-6">
+
+      <div class="destination-card card-3d">
+
+        <img src="assets/images/e2.jpg">
+
+        <div class="destination-overlay">
+
+          <div class="destination-content">
+
+            <h3>Dubai Marina</h3>
+
+            <p>
+              Enjoy skyline yacht cruises,
+              premium nightlife, and luxury experiences.
+            </p>
+
+            <div class="destination-stars">
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <div class="destination-info">
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                5 Days
+              </span>
+
+              <span class="trip-price">
+                From $5,900
+              </span>
+
+            </div>
+
+            <a href="#" class="destination-btn">
+              Explore Destination
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-lg-4 col-md-6">
+
+      <div class="destination-card card-3d">
+
+        <img src="assets/images/e4.jpg">
+
+        <div class="destination-overlay">
+
+          <div class="destination-content">
+
+            <h3>French Riviera</h3>
+
+            <p>
+              Elegant coastal escapes with world-class
+              beaches and exclusive harbors.
+            </p>
+
+            <div class="destination-stars">
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <div class="destination-info">
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                10 Days
+              </span>
+
+              <span class="trip-price">
+                From $7,200
+              </span>
+
+            </div>
+
+            <a href="#" class="destination-btn">
+              Explore Destination
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     EXPERIENCE SECTION
+========================= -->
+
+<section id="experience">
+
+  <div class="container">
+
+    <div class="section-header text-center mb-5">
+      <span class="small-text">LUXURY EXPERIENCE</span>
+      <h2>Experience The Extraordinary</h2>
+      <p>Every journey is crafted to deliver unmatched luxury on the ocean.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="exp-card">
+          <i class="fas fa-umbrella-beach"></i>
+          <h3>Sunset Cruises</h3>
+          <p>Enjoy breathtaking sunsets with a luxury ocean view experience.</p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="exp-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Fine Dining</h3>
+          <p>World-class chefs preparing exclusive meals onboard your yacht.</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="exp-card">
+          <i class="fas fa-ship"></i>
+          <h3>Private Suites</h3>
+          <p>Luxury cabins designed for maximum comfort and privacy.</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="exp-card">
+          <i class="fas fa-music"></i>
+          <h3>VIP Events</h3>
+          <p>Exclusive parties and events on the open sea with elite guests.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials-section container py-5" id="testimonials">
+
+  <div class="section-header text-center mb-5">
+    <p>CLIENT REVIEWS</p>
+    <h2>What Our Guests Say</h2>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- REVIEW 1 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="testimonial-card">
+
+        <div class="user">
+          <img src="assets/images/T1.jpg">
+          <div>
+            <h4>John Smith</h4>
+            <span>Dubai</span>
+          </div>
+        </div>
+
+        <p>
+          “The yacht experience was absolutely incredible. Luxury, comfort and perfect service.”
+        </p>
+
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- REVIEW 2 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="testimonial-card">
+
+        <div class="user">
+          <img src="assets/images/T2.jpg">
+          <div>
+            <h4>Sarah Williams</h4>
+            <span>London</span>
+          </div>
+        </div>
+
+        <p>
+          “Perfect family yacht trip. Everything was smooth and premium quality service.”
+        </p>
+
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- REVIEW 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="testimonial-card">
+
+        <div class="user">
+          <img src="assets/images/T3.jpg">
+          <div>
+            <h4>Michael Lee</h4>
+            <span>Monaco</span>
+          </div>
+        </div>
+
+        <p>
+          “Best luxury yacht service I’ve ever experienced. Highly recommended!”
+        </p>
+
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+       FOOTER
+========================= -->
+
+<footer id="footer">
+<footer class="footer-section">
+
+  <div class="container py-5">
+
+    <div class="row g-4">
+
+      <!-- BRAND -->
+      <div class="col-lg-4 col-md-6">
+
+        <h2 class="footer-logo">YACHTLUX</h2>
+        <p>
+          Luxury yacht experiences across the world’s most beautiful oceans.
+        </p>
+
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-lg-4 col-md-6">
+
+        <h4>Quick Links</h4>
+
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#fleet">Fleet</a></li>
+          <li><a href="#discover">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-lg-4 col-md-12">
+
+        <h4>Contact</h4>
+
+        <p><i class="fa-solid fa-phone"></i> +218 91 000 0000</p>
+        <p><i class="fa-solid fa-envelope"></i> yachtlux@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Tripoli, Libya</p>
+        <div class="footer-social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom text-center py-3">
+    <p>© 2026 YachtLux. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+<!-- =========================
+       JS (LOCAL BOOTSTRAP)
+========================= -->
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

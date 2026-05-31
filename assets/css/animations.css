@@ -1,0 +1,20 @@
+/* =========================
+   ANIMATIONS
+========================= */
+
+.yacht-card{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.7s ease;
+}
+
+.yacht-card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* hover effects */
+.yacht-card:hover{
+transform:translateY(-10px);
+transition:0.4s;
+}
